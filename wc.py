@@ -81,12 +81,12 @@ def run(filepath,ddd):
     		list_content.append(b)
     		b = html.unescape(b)
     		b = strip_tags(b)
-    		buf = collections.Counter([w for w in remove_punc(b).lower().split() if not (w in stop_words) and not (bool(re.match(r"^[0-9]+$", w)))])
+    		buf = collections.Counter([w for w in remove_punc(b).lower().split() if not (w in stop_words) and (bool(re.match(r"^[a-zA-Z]+$",w))) and not (bool(re.match(r"^[0-9]+$", w)))])
     		list_wc.append(buf)
 
     	else:
     		list_content.append(message.get_payload())
-    		buf = collections.Counter([w for w in remove_punc(message.get_payload()).lower().split() if not (w in stop_words) and not (bool(re.match(r"^[0-9]+$", w)))])
+    		buf = collections.Counter([w for w in remove_punc(message.get_payload()).lower().split() if not (w in stop_words) and (bool(re.match(r"^[a-zA-Z]+$",w))) and not (bool(re.match(r"^[0-9]+$", w)))])
     		list_wc.append(buf)
 
 

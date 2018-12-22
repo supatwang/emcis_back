@@ -73,7 +73,10 @@ def run(filename):
 		node['id'] = i
 		node['x'] = random.uniform(-1000, 1000)
 		node['y'] = random.uniform(-1000, 1000)
-		node['size'] = node_size[i]
+		if node_size[i] > 20:
+			node['size'] = int(20 + node_size[i]/20)	
+		else:
+			node['size'] = node_size[i]
 		node['sent_count'] = node_size[i] - 9
 		node['attributes'] = {}
 		node['label'] = i

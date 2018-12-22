@@ -4,11 +4,13 @@ from werkzeug.utils import secure_filename
 import createGraph
 import createRelayGraph
 import wc
+from flask_cors import CORS
 
 UPLOAD_FOLDER = 'up'
 ALLOWED_EXTENSIONS = set(['mbox'])
 
 app = Flask(__name__)
+CORS(app)
 app.secret_key = "secret_key"
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
@@ -16,7 +18,7 @@ def allowed_file(filename):
     return '.' in filename and \
            filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/kuy', methods=['GET', 'POST'])
 def upload_page ():
     return '''<form id='picture-file-input-button' action='/upload' method='post' enctype='multipart/form-data' encoding='multipart/form-data'>
     <input  type='file' name='file' />
@@ -24,7 +26,7 @@ def upload_page ():
 </form>'''
 
 
-@app.route('/upload', methods=['GET', 'POST'])
+@app.route('/upload', methods=['POST'])
 def upload_file():
     if request.method == 'POST':
         # check if the post request has the file part

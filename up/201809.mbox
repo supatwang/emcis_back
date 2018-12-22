@@ -1,0 +1,1241 @@
+From commits-return-842-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 17:39:37 2018
+Return-Path: <commits-return-842-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id D2A3420472
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 17:39:37 +0000 (UTC)
+Received: (qmail 20580 invoked by uid 500); 20 Sep 2018 17:39:37 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 20549 invoked by uid 500); 20 Sep 2018 17:39:37 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 20540 invoked by uid 99); 20 Sep 2018 17:39:37 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd1-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 17:39:37 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd1-us-west.apache.org (ASF Mail Server at spamd1-us-west.apache.org) with ESMTP id 23322C1DCC
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 17:39:37 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd1-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.701
+X-Spam-Level:
+X-Spam-Status: No, score=-11.701 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5] autolearn=disabled
+Received: from mx1-lw-us.apache.org ([10.40.0.8])
+	by localhost (spamd1-us-west.apache.org [10.40.0.7]) (amavisd-new, port 10024)
+	with ESMTP id pPvGIZQ0G7iI for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 17:39:36 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-us.apache.org (ASF Mail Server at mx1-lw-us.apache.org) with SMTP id 005885F17B
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 17:39:35 +0000 (UTC)
+Received: (qmail 20523 invoked by uid 99); 20 Sep 2018 17:39:35 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 17:39:35 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id 5966AE10EB; Thu, 20 Sep 2018 17:39:35 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: nathanael@apache.org
+To: commits@spot.incubator.apache.org
+Message-Id: <8ac33a1656dc475eb9bba54a2046a4cf@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: incubator-spot git commit: Changes to Readme
+Date: Thu, 20 Sep 2018 17:39:35 +0000 (UTC)
+
+Repository: incubator-spot
+Updated Branches:
+  refs/heads/master 14dbd511d -> 4cfe66a72
+
+
+Changes to Readme
+
+- Removed references to Slack
+- Added references to dev Mailing list
+- Revised Merge approval section to give more details on the steps necessary.
+
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/4cfe66a7
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/4cfe66a7
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/4cfe66a7
+
+Branch: refs/heads/master
+Commit: 4cfe66a72c52be3793281cc139adca3cf9b528e6
+Parents: 14dbd51
+Author: Mark Schoeni <mschoeni@cloudera.com>
+Authored: Thu Aug 16 09:31:15 2018 -0500
+Committer: Mark Schoeni <mschoeni@cloudera.com>
+Committed: Thu Aug 16 09:31:15 2018 -0500
+
+----------------------------------------------------------------------
+ README.md                                  | 19 +++++++++++++------
+ issues-subscribe@spot.incubator.apache.org |  0
+ 2 files changed, 13 insertions(+), 6 deletions(-)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/4cfe66a7/README.md
+----------------------------------------------------------------------
+diff --git a/README.md b/README.md
+index 13888ea..27a85d1 100644
+--- a/README.md
++++ b/README.md
+@@ -71,8 +71,8 @@ Apache Spot functionality is divided into different modules, go to each module f
+ 
+ Our Central repository for our Apache Spot solution is found here. If you find a bug, have question or something to discuss please contact us:
+ 
+-* [Create an Issue](https://issues.apache.org/jira/browse/SPOT-20?jql=project%20%3D%20SPOT). 
+-* [Go to our Slack channel](https://apachespot.slack.com/messages/general/). 
++* [Create an Issue](https://issues.apache.org/jira/browse/SPOT-20?jql=project%20%3D%20SPOT)
++* [Join the Dev List](mailto:issues-subscribe@spot.incubator.apache.org) and then [send us a message](mailto:dev@spot.incubator.apache.org)
+ 
+ ## **Contributing to Apache Spot**
+ 
+@@ -86,7 +86,7 @@ and join our community.
+ * Fork the repo of the module that you wish to commit to.
+ * Create a Branch, we use [topic branches](https://git-scm.com/book/en/v2/Git-Branching-Branching-Workflows#Topic-Branches) for our commits. 
+ * Push your commit(s) to your repository.
+-* Create a pull request to the original repo in Apache Spot organization.
++* Create a pull request to the original repo in Apache Spot organization. *(See Below for Merging details)*
+ 
+ ### **Commit Guidelines**
+ 
+@@ -94,10 +94,17 @@ and join our community.
+ * Please be clear with the commit messages about what you are fixing or adding to the code base. If you code is addressing an open issue please add the reference to the issue in the comments with: Fix: Issue's URL. 
+ 
+ 
+-### **Merge approval**
++### **Merge Process**
+ 
+-Apache Spot maintainers use +1 in a comment on the code review to indicate acceptance, 
+-at least 3 "+1" from maintainers are required to approve the merge. If you have any question or concern please feel free to add a comment in your pull request or branch and tag any of the maintainers.
++Thanks for considering to contribute to the Spot Project. In order to help make the process a little eaiser for everyone, please follow these steps.
++1) In order to start the merge process please open a ticket in the [Spot Jira](https://issues.apache.org/jira/projects/SPOT/issues) and take note of the Issue key *(SPOT-###)*. 
++2) Next, open a Pull-Request (PR) and reference the Issue key in the title of the PR. If you have any question or concern please feel free to add a comment in your pull request or branch and tag any of the maintainers.
++3) Now, it's time for the community to provide feedback on your commit. Getting community feedback can be hard, but start by sending a message to the Dev list; and make sure you're [subscribed](mailto:issues-subscribe@spot.incubator.apache.org) to the Dev List.
++4) At the same time, maintainers will be taking a look at your PR. The more community input you can get, in the form of comments rather than +1s, the more attention maintainers will give. 
++There are is a manual and an automatic merge process
++   * **Manual:** When a Project maintainer has given a '+1' in the comments, then you're PR has been accepted. However, it must be manually merged by a maintainer at this point. 
++   * **Automatic:** This process initiates when 3 maintainers provide a '+1'
++   * **Note:** if there are any merge conflicts you will have to come back and fix them before the process can continue.
+ 
+ 
+ ## **Licensing**
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/4cfe66a7/issues-subscribe@spot.incubator.apache.org
+----------------------------------------------------------------------
+diff --git a/issues-subscribe@spot.incubator.apache.org b/issues-subscribe@spot.incubator.apache.org
+new file mode 100644
+index 0000000..e69de29
+
+
+From commits-return-843-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 18:32:40 2018
+Return-Path: <commits-return-843-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id 6347A20C03
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 18:32:40 +0000 (UTC)
+Received: (qmail 52530 invoked by uid 500); 20 Sep 2018 18:32:40 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 52497 invoked by uid 500); 20 Sep 2018 18:32:40 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 52486 invoked by uid 99); 20 Sep 2018 18:32:40 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd1-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 18:32:40 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd1-us-west.apache.org (ASF Mail Server at spamd1-us-west.apache.org) with ESMTP id E71EAC570F
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 18:32:39 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd1-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.701
+X-Spam-Level:
+X-Spam-Status: No, score=-11.701 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5] autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd1-us-west.apache.org [10.40.0.7]) (amavisd-new, port 10024)
+	with ESMTP id THSFz8o1Lg4H for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 18:32:39 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id CF8895F381
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 18:32:38 +0000 (UTC)
+Received: (qmail 52480 invoked by uid 99); 20 Sep 2018 18:32:38 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 18:32:38 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id B2F54E0BEF; Thu, 20 Sep 2018 18:32:37 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 18:32:37 -0000
+Message-Id: <394dce72e6de436bad4e415ee4058b2e@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [1/2] incubator-spot git commit: Update odm_setup.sh
+
+Repository: incubator-spot
+Updated Branches:
+  refs/heads/SPOT-181_ODM ee4e17d7e -> 6c5ef0a90
+
+
+Update odm_setup.sh
+
+Example for format argument usage corrected.
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/7fe5c8cd
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/7fe5c8cd
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/7fe5c8cd
+
+Branch: refs/heads/SPOT-181_ODM
+Commit: 7fe5c8cd6095e8e8bb0073cc95bee9021b7666bc
+Parents: ee4e17d
+Author: Anna Dorottya Simon <simon.anna.d@gmail.com>
+Authored: Mon Aug 6 15:40:05 2018 +0200
+Committer: GitHub <noreply@github.com>
+Committed: Mon Aug 6 15:40:05 2018 +0200
+
+----------------------------------------------------------------------
+ spot-setup/odm/odm_setup.sh | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/7fe5c8cd/spot-setup/odm/odm_setup.sh
+----------------------------------------------------------------------
+diff --git a/spot-setup/odm/odm_setup.sh b/spot-setup/odm/odm_setup.sh
+index 7fc10bd..7a48149 100755
+--- a/spot-setup/odm/odm_setup.sh
++++ b/spot-setup/odm/odm_setup.sh
+@@ -92,7 +92,7 @@ done
+ 
+ # Check the format argument and make sure its supported
+ if [ "$format" != "pqt" ] && [ "$format" != "avro" ] ; then
+-    log "Format argument '$format' is not supported. Only Parquet and Avro are supported data storage formats. Use 'pqt' or 'avro'  instead (i.e. ./odm_setup pqt)."
++    log "Format argument '$format' is not supported. Only Parquet and Avro are supported data storage formats. Use 'pqt' or 'avro'  instead (i.e. ./odm_setup -f pqt)."
+     exit 1
+ fi
+ 
+@@ -194,4 +194,4 @@ do
+             ${impala_db_shell} --var=ODM_DBNAME=${DBNAME} --var=ODM_TABLENAME=${f} --var=ODM_LOCATION=${HUSER}/${d}/${f} --var=ODM_AVRO_URL=hdfs://${HUSER}/${d}/schema/${f}.avsc -c -f ${ODM_FILES_DIR}/create_${f}_avro.sql
+         fi
+ 	done
+-done
+\ No newline at end of file
++done
+
+
+From commits-return-844-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 18:32:40 2018
+Return-Path: <commits-return-844-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id D248E20C04
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 18:32:40 +0000 (UTC)
+Received: (qmail 52591 invoked by uid 500); 20 Sep 2018 18:32:40 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 52558 invoked by uid 500); 20 Sep 2018 18:32:40 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 52543 invoked by uid 99); 20 Sep 2018 18:32:40 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd4-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 18:32:40 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd4-us-west.apache.org (ASF Mail Server at spamd4-us-west.apache.org) with ESMTP id 556E0C0558
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 18:32:40 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd4-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.701
+X-Spam-Level:
+X-Spam-Status: No, score=-11.701 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5] autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd4-us-west.apache.org [10.40.0.11]) (amavisd-new, port 10024)
+	with ESMTP id gNcf80A6YO4n for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 18:32:39 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id 02EC15F485
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 18:32:38 +0000 (UTC)
+Received: (qmail 52483 invoked by uid 99); 20 Sep 2018 18:32:38 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 18:32:38 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id B5DFCE1181; Thu, 20 Sep 2018 18:32:37 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 18:32:38 -0000
+Message-Id: <8dbf2df8341444fcbb61da0c120ad45f@git.apache.org>
+In-Reply-To: <394dce72e6de436bad4e415ee4058b2e@git.apache.org>
+References: <394dce72e6de436bad4e415ee4058b2e@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [2/2] incubator-spot git commit: ml_ops.sh usage corrected
+
+ml_ops.sh usage corrected
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/6c5ef0a9
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/6c5ef0a9
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/6c5ef0a9
+
+Branch: refs/heads/SPOT-181_ODM
+Commit: 6c5ef0a90f9f36dd542f80a620467d438d5912c1
+Parents: 7fe5c8c
+Author: Anna Dorottya Simon <simon.anna.d@gmail.com>
+Authored: Wed Aug 29 11:41:20 2018 +0200
+Committer: GitHub <noreply@github.com>
+Committed: Wed Aug 29 11:41:20 2018 +0200
+
+----------------------------------------------------------------------
+ spot-ml/ml_ops.sh | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/6c5ef0a9/spot-ml/ml_ops.sh
+----------------------------------------------------------------------
+diff --git a/spot-ml/ml_ops.sh b/spot-ml/ml_ops.sh
+index 977a58e..90cddb3 100755
+--- a/spot-ml/ml_ops.sh
++++ b/spot-ml/ml_ops.sh
+@@ -29,11 +29,11 @@ DY=${FDATE:6:2}
+ if [[ "${#FDATE}" != "8" || -z "${DSOURCE}" ]]; then
+     echo "ml_ops.sh syntax error"
+     echo "Please run ml_ops.sh again with the correct syntax:"
+-    echo "./ml_ops.sh YYYYMMDD TYPE [MAX RESULTS] [TOL]"
++    echo "./ml_ops.sh YYYYMMDD TYPE [TOL] [MAX RESULTS]"
+     echo "for example:"
+-    echo "./ml_ops.sh 20160122 dns 1000 1e-6"
++    echo "./ml_ops.sh 20160122 dns 1e-6 1000"
+     echo "./ml_ops.sh 20160122 flow"
+-    echo "./ml_ops.sh 20160122 proxy 100"
++    echo "./ml_ops.sh 20160122 proxy 1"
+     exit
+ fi
+ 
+
+
+From commits-return-845-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 18:57:35 2018
+Return-Path: <commits-return-845-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id CBFD81E961
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 18:57:35 +0000 (UTC)
+Received: (qmail 35364 invoked by uid 500); 20 Sep 2018 18:57:35 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 35324 invoked by uid 500); 20 Sep 2018 18:57:35 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 35311 invoked by uid 99); 20 Sep 2018 18:57:35 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd3-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 18:57:35 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd3-us-west.apache.org (ASF Mail Server at spamd3-us-west.apache.org) with ESMTP id 5E0EA1805C9
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 18:57:35 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd3-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.701
+X-Spam-Level:
+X-Spam-Status: No, score=-11.701 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5] autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd3-us-west.apache.org [10.40.0.10]) (amavisd-new, port 10024)
+	with ESMTP id WSXgOyUcRl-B for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 18:57:34 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id C6C8D5F169
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 18:57:33 +0000 (UTC)
+Received: (qmail 871 invoked by uid 99); 20 Sep 2018 18:50:53 -0000
+Received: from Unknown (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 18:50:53 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id 27B07E0BEF; Thu, 20 Sep 2018 18:50:37 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: mohicks@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 18:50:37 -0000
+Message-Id: <165aed74612f489ca00b6f9e61873119@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [1/2] incubator-spot git commit: flexible path to bash when calling
+ screen
+
+Repository: incubator-spot
+Updated Branches:
+  refs/heads/master 4cfe66a72 -> bcda92ea3
+
+
+flexible path to bash when calling screen
+
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/3dc09461
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/3dc09461
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/3dc09461
+
+Branch: refs/heads/master
+Commit: 3dc0946154effbec352d7d5f8228149b2482ce6f
+Parents: 14dbd51
+Author: tpltnt <tpltnt.github@dropcut.net>
+Authored: Sat May 26 14:43:57 2018 +0200
+Committer: tpltnt <tpltnt.github@dropcut.net>
+Committed: Sat May 26 14:43:57 2018 +0200
+
+----------------------------------------------------------------------
+ spot-ingest/start_ingest_standalone.sh | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/3dc09461/spot-ingest/start_ingest_standalone.sh
+----------------------------------------------------------------------
+diff --git a/spot-ingest/start_ingest_standalone.sh b/spot-ingest/start_ingest_standalone.sh
+index 1a16612..5d7ce36 100755
+--- a/spot-ingest/start_ingest_standalone.sh
++++ b/spot-ingest/start_ingest_standalone.sh
+@@ -58,7 +58,7 @@ fi
+ 
+ INGEST_DATE=`date +"%H_%M_%S"`
+ 
+-screen -d -m -S SPOT-INGEST-${INGEST_CONF}-${INGEST_DATE}  -s /bin/bash
++screen -d -m -S SPOT-INGEST-${INGEST_CONF}-${INGEST_DATE}  -s `which bash`
+ screen -S SPOT-INGEST-${INGEST_CONF}-${INGEST_DATE} -X setenv TZ ${TIME_ZONE}
+ screen -dr  SPOT-INGEST-${INGEST_CONF}-${INGEST_DATE} -X screen -t Master sh -c "python master_collector.py -t ${INGEST_CONF} -w ${WORKERS_NUM} -id SPOT-INGEST-${INGEST_CONF}-${INGEST_DATE}; echo 'Closing Master...'; sleep 432000"
+ 
+
+
+From commits-return-846-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 18:57:35 2018
+Return-Path: <commits-return-846-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id D33271E962
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 18:57:35 +0000 (UTC)
+Received: (qmail 35416 invoked by uid 500); 20 Sep 2018 18:57:35 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 35331 invoked by uid 500); 20 Sep 2018 18:57:35 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 35315 invoked by uid 99); 20 Sep 2018 18:57:35 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd4-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 18:57:35 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd4-us-west.apache.org (ASF Mail Server at spamd4-us-west.apache.org) with ESMTP id 6D031C1AE0
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 18:57:35 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd4-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.201
+X-Spam-Level:
+X-Spam-Status: No, score=-11.201 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, KAM_NUMSUBJECT=0.5,
+	RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, USER_IN_DEF_SPF_WL=-7.5]
+	autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd4-us-west.apache.org [10.40.0.11]) (amavisd-new, port 10024)
+	with ESMTP id tYduCyH-7Za8 for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 18:57:34 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id C6FC25F48D
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 18:57:33 +0000 (UTC)
+Received: (qmail 868 invoked by uid 99); 20 Sep 2018 18:50:53 -0000
+Received: from Unknown (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 18:50:53 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id 2B362E1181; Thu, 20 Sep 2018 18:50:37 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: mohicks@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 18:50:38 -0000
+Message-Id: <74bb76f5c6a14baf813c520f9d0b13ab@git.apache.org>
+In-Reply-To: <165aed74612f489ca00b6f9e61873119@git.apache.org>
+References: <165aed74612f489ca00b6f9e61873119@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [2/2] incubator-spot git commit: Merge branch 'master' into pr-145
+
+Merge branch 'master' into pr-145
+
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/bcda92ea
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/bcda92ea
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/bcda92ea
+
+Branch: refs/heads/master
+Commit: bcda92ea3bbebd6f5c7828b73d0495f9f90ede13
+Parents: 3dc0946 4cfe66a
+Author: mhicks <mhicks@cloudera.com>
+Authored: Thu Sep 20 14:49:43 2018 -0400
+Committer: mhicks <mhicks@cloudera.com>
+Committed: Thu Sep 20 14:49:43 2018 -0400
+
+----------------------------------------------------------------------
+ README.md                                  | 19 +++++++++++++------
+ issues-subscribe@spot.incubator.apache.org |  0
+ 2 files changed, 13 insertions(+), 6 deletions(-)
+----------------------------------------------------------------------
+
+
+
+From commits-return-847-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 19:47:48 2018
+Return-Path: <commits-return-847-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id 028EA1FF22
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 19:47:48 +0000 (UTC)
+Received: (qmail 55735 invoked by uid 500); 20 Sep 2018 19:47:47 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 55699 invoked by uid 500); 20 Sep 2018 19:47:47 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 55690 invoked by uid 99); 20 Sep 2018 19:47:47 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd1-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 19:47:47 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd1-us-west.apache.org (ASF Mail Server at spamd1-us-west.apache.org) with ESMTP id 88D11C5833
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 19:47:47 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd1-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.701
+X-Spam-Level:
+X-Spam-Status: No, score=-11.701 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5] autolearn=disabled
+Received: from mx1-lw-us.apache.org ([10.40.0.8])
+	by localhost (spamd1-us-west.apache.org [10.40.0.7]) (amavisd-new, port 10024)
+	with ESMTP id VqZG_s05FwjM for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 19:47:45 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-us.apache.org (ASF Mail Server at mx1-lw-us.apache.org) with SMTP id 645A35F433
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 19:47:45 +0000 (UTC)
+Received: (qmail 55592 invoked by uid 99); 20 Sep 2018 19:47:44 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 19:47:44 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id 9CCFCE11BB; Thu, 20 Sep 2018 19:47:44 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 19:47:44 -0000
+Message-Id: <08ece389e172416a8fa6c6411e0dbeb7@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [1/3] incubator-spot git commit: Version updated of sbt assembly
+
+Repository: incubator-spot
+Updated Branches:
+  refs/heads/master bcda92ea3 -> 546139f5a
+
+
+Version updated of sbt assembly
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/bf5b9302
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/bf5b9302
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/bf5b9302
+
+Branch: refs/heads/master
+Commit: bf5b9302011c1f11f3ccab11182269d4ca44a546
+Parents: 9215d81
+Author: Sun Hao <295173889@qq.com>
+Authored: Sat Jan 27 15:02:51 2018 +0800
+Committer: GitHub <noreply@github.com>
+Committed: Sat Jan 27 15:02:51 2018 +0800
+
+----------------------------------------------------------------------
+ spot-ml/project/plugins.sbt | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/bf5b9302/spot-ml/project/plugins.sbt
+----------------------------------------------------------------------
+diff --git a/spot-ml/project/plugins.sbt b/spot-ml/project/plugins.sbt
+index 55de9d9..30d2f56 100644
+--- a/spot-ml/project/plugins.sbt
++++ b/spot-ml/project/plugins.sbt
+@@ -15,4 +15,4 @@
+  * limitations under the License.
+  */
+ 
+-addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.9.1")
++addSbtPlugin("com.eed3si9n" % "sbt-assembly" % "0.14.6")
+
+
+From commits-return-848-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 19:47:48 2018
+Return-Path: <commits-return-848-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id 25F7A1FF2A
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 19:47:48 +0000 (UTC)
+Received: (qmail 55797 invoked by uid 500); 20 Sep 2018 19:47:48 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 55764 invoked by uid 500); 20 Sep 2018 19:47:48 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 55755 invoked by uid 99); 20 Sep 2018 19:47:48 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd1-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 19:47:48 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd1-us-west.apache.org (ASF Mail Server at spamd1-us-west.apache.org) with ESMTP id 7B56DC5840
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 19:47:47 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd1-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.7
+X-Spam-Level:
+X-Spam-Status: No, score=-11.7 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5, WEIRD_QUOTING=0.001] autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd1-us-west.apache.org [10.40.0.7]) (amavisd-new, port 10024)
+	with ESMTP id mCyE3NwpGzaV for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 19:47:46 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id E3B275F48D
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 19:47:45 +0000 (UTC)
+Received: (qmail 55598 invoked by uid 99); 20 Sep 2018 19:47:45 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 19:47:45 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id 9F679E11BC; Thu, 20 Sep 2018 19:47:44 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 19:47:45 -0000
+Message-Id: <6d3bed5fcfef4c399fb61c6582ee0660@git.apache.org>
+In-Reply-To: <08ece389e172416a8fa6c6411e0dbeb7@git.apache.org>
+References: <08ece389e172416a8fa6c6411e0dbeb7@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [2/3] incubator-spot git commit: Usage of assembly changed
+
+Usage of assembly changed
+
+Because the version of assembly updated, the usage has changed.
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/5957e228
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/5957e228
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/5957e228
+
+Branch: refs/heads/master
+Commit: 5957e2287cafd5947dbe614bf428ae14d614fbe2
+Parents: bf5b930
+Author: Sun Hao <295173889@qq.com>
+Authored: Sat Jan 27 15:05:17 2018 +0800
+Committer: GitHub <noreply@github.com>
+Committed: Sat Jan 27 15:05:17 2018 +0800
+
+----------------------------------------------------------------------
+ spot-ml/build.sbt | 9 +++------
+ 1 file changed, 3 insertions(+), 6 deletions(-)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/5957e228/spot-ml/build.sbt
+----------------------------------------------------------------------
+diff --git a/spot-ml/build.sbt b/spot-ml/build.sbt
+index 5ffc520..cc83ed0 100644
+--- a/spot-ml/build.sbt
++++ b/spot-ml/build.sbt
+@@ -23,9 +23,7 @@ scalaVersion := "2.11.8"
+ 
+ val sparkVersion = "2.1.0"
+ 
+-import sbtassembly.Plugin.AssemblyKeys._
+-
+-assemblySettings
++baseAssemblySettings
+ 
+ libraryDependencies += "org.apache.spark" %% "spark-core" % sparkVersion % "provided"
+ libraryDependencies += "org.apache.spark" %% "spark-mllib" % sparkVersion
+@@ -37,7 +35,7 @@ resolvers += Resolver.sonatypeRepo("public")
+ 
+ val meta = """META.INF(.)*""".r
+ 
+-mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) => {
++assemblyMergeStrategy in assembly := {
+   case PathList("org", "apache", "commons", xs@_*) => MergeStrategy.last
+   case PathList("com", "esotericsoftware", "minlog", xs@_*) => MergeStrategy.last
+   case PathList("com", "google", xs@_*) => MergeStrategy.last
+@@ -50,7 +48,6 @@ mergeStrategy in assembly <<= (mergeStrategy in assembly) { (old) => {
+   case meta(_) => MergeStrategy.discard
+   case x => MergeStrategy.first
+ }
+-}
+ 
+ // super important with multiple tests running spark Contexts
+ parallelExecution in Test := false
+@@ -69,4 +66,4 @@ getTop1MFileFromAlexa := {
+   }
+ }
+ 
+-resourceGenerators in Compile <+= getTop1MFileFromAlexa
+\ No newline at end of file
++resourceGenerators in Compile += getTop1MFileFromAlexa
+
+
+From commits-return-849-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 19:47:48 2018
+Return-Path: <commits-return-849-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id 8B3DF1FF30
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 19:47:48 +0000 (UTC)
+Received: (qmail 55876 invoked by uid 500); 20 Sep 2018 19:47:48 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 55834 invoked by uid 500); 20 Sep 2018 19:47:48 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 55825 invoked by uid 99); 20 Sep 2018 19:47:48 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd4-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 19:47:48 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd4-us-west.apache.org (ASF Mail Server at spamd4-us-west.apache.org) with ESMTP id E2DB6C1B00
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 19:47:47 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd4-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.201
+X-Spam-Level:
+X-Spam-Status: No, score=-11.201 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, KAM_NUMSUBJECT=0.5,
+	RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, USER_IN_DEF_SPF_WL=-7.5]
+	autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd4-us-west.apache.org [10.40.0.11]) (amavisd-new, port 10024)
+	with ESMTP id tUIWybKgNbCP for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 19:47:46 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id E157A5F419
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 19:47:45 +0000 (UTC)
+Received: (qmail 55599 invoked by uid 99); 20 Sep 2018 19:47:45 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 19:47:45 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id A1DD6E11BD; Thu, 20 Sep 2018 19:47:44 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 19:47:46 -0000
+Message-Id: <8d285d9597984c8ba7e844c7e30e0086@git.apache.org>
+In-Reply-To: <08ece389e172416a8fa6c6411e0dbeb7@git.apache.org>
+References: <08ece389e172416a8fa6c6411e0dbeb7@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [3/3] incubator-spot git commit: Merge branch 'master' into pr-137
+
+Merge branch 'master' into pr-137
+
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/546139f5
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/546139f5
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/546139f5
+
+Branch: refs/heads/master
+Commit: 546139f5ae8d4c11821dea7cae45462a61e2e81c
+Parents: 5957e22 bcda92e
+Author: Tadd Wood <tadd@arcadiadata.com>
+Authored: Thu Sep 20 12:46:36 2018 -0700
+Committer: Tadd Wood <tadd@arcadiadata.com>
+Committed: Thu Sep 20 12:46:36 2018 -0700
+
+----------------------------------------------------------------------
+ README.md                                   |  19 +-
+ issues-subscribe@spot.incubator.apache.org  |   0
+ spot-ingest/README.md                       |   6 +
+ spot-ingest/common/configurator.py          | 119 ++++++++++
+ spot-ingest/common/hdfs_client.py           | 233 +++++++++++++++++++
+ spot-ingest/common/hive_engine.py           |  73 ++++++
+ spot-ingest/common/kafka_client.py          | 193 ++++++++++++----
+ spot-ingest/common/kerberos.py              |  42 ++--
+ spot-ingest/kerberos-requirements.txt       |   4 +
+ spot-ingest/master_collector.py             |  21 +-
+ spot-ingest/pipelines/dns/collector.py      | 133 +++++++----
+ spot-ingest/pipelines/dns/worker.py         | 141 +++++++++---
+ spot-ingest/pipelines/flow/collector.py     | 111 +++++----
+ spot-ingest/pipelines/flow/worker.py        | 193 ++++++++++++----
+ spot-ingest/pipelines/proxy/bluecoat.py     | 177 +++++++++-----
+ spot-ingest/pipelines/proxy/collector.py    |   6 +-
+ spot-ingest/requirements.txt                |   5 +-
+ spot-ingest/start_ingest_standalone.sh      |   2 +-
+ spot-ingest/worker.py                       |   6 +-
+ spot-oa/api/resources/configurator.py       |  69 +++++-
+ spot-oa/api/resources/hdfs_client.py        | 201 ++++++++++++++--
+ spot-oa/api/resources/impala_engine.py      |  29 ++-
+ spot-oa/kerberos-requirements.txt           |   3 +
+ spot-oa/oa/components/data/hive.py          |   1 +
+ spot-oa/oa/components/data/impala.py        |  25 +-
+ spot-oa/oa/utils.py                         | 282 +++++++++++------------
+ spot-oa/requirements.txt                    |   2 +
+ spot-setup/KERBEROS.md                      |  50 ++++
+ spot-setup/README.md                        |   7 +
+ spot-setup/beeline/create_dns_parquet.hql   | 162 +++++++++++++
+ spot-setup/beeline/create_flow_parquet.hql  | 194 ++++++++++++++++
+ spot-setup/beeline/create_proxy_parquet.hql | 179 ++++++++++++++
+ spot-setup/create_dns_parquet.hql           | 163 -------------
+ spot-setup/create_flow_parquet.hql          | 195 ----------------
+ spot-setup/create_proxy_parquet.hql         | 177 --------------
+ spot-setup/hdfs_setup.sh                    | 120 ++++++++--
+ spot-setup/hive/create_dns_parquet.hql      | 165 +++++++++++++
+ spot-setup/hive/create_flow_parquet.hql     | 197 ++++++++++++++++
+ spot-setup/hive/create_proxy_parquet.hql    | 179 ++++++++++++++
+ spot-setup/impala/create_dns_parquet.hql    | 163 +++++++++++++
+ spot-setup/impala/create_flow_parquet.hql   | 195 ++++++++++++++++
+ spot-setup/impala/create_proxy_parquet.hql  | 177 ++++++++++++++
+ spot-setup/spot.conf                        |  28 ++-
+ 43 files changed, 3407 insertions(+), 1040 deletions(-)
+----------------------------------------------------------------------
+
+
+
+From commits-return-850-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 21:11:42 2018
+Return-Path: <commits-return-850-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id 5038C1E182
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 21:11:42 +0000 (UTC)
+Received: (qmail 61702 invoked by uid 500); 20 Sep 2018 21:11:42 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 61665 invoked by uid 500); 20 Sep 2018 21:11:42 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 61656 invoked by uid 99); 20 Sep 2018 21:11:42 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd2-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 21:11:42 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd2-us-west.apache.org (ASF Mail Server at spamd2-us-west.apache.org) with ESMTP id D42621A0801
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 21:11:41 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd2-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.701
+X-Spam-Level:
+X-Spam-Status: No, score=-11.701 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5] autolearn=disabled
+Received: from mx1-lw-us.apache.org ([10.40.0.8])
+	by localhost (spamd2-us-west.apache.org [10.40.0.9]) (amavisd-new, port 10024)
+	with ESMTP id q9fP5_kApwgX for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 21:11:41 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-us.apache.org (ASF Mail Server at mx1-lw-us.apache.org) with SMTP id E72245F3CC
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 21:11:40 +0000 (UTC)
+Received: (qmail 61639 invoked by uid 99); 20 Sep 2018 21:11:40 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 21:11:40 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id EC3F7E11C9; Thu, 20 Sep 2018 21:11:39 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 21:11:41 -0000
+Message-Id: <cc93d4f96a4645f3bee4b06ea888ab5c@git.apache.org>
+In-Reply-To: <30832407512945609a6f9fd214f67fc9@git.apache.org>
+References: <30832407512945609a6f9fd214f67fc9@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [3/4] incubator-spot git commit: description for scored filter
+
+description for scored filter
+
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/76034f41
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/76034f41
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/76034f41
+
+Branch: refs/heads/master
+Commit: 76034f415cc18af5c5095ef6824716d326caf7d9
+Parents: a142dad
+Author: tpltnt <tpltnt.github@dropcut.net>
+Authored: Fri Apr 6 14:26:56 2018 +0200
+Committer: tpltnt <tpltnt.github@dropcut.net>
+Committed: Fri Apr 6 14:26:56 2018 +0200
+
+----------------------------------------------------------------------
+ .../scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala   | 1 +
+ 1 file changed, 1 insertion(+)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/76034f41/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+----------------------------------------------------------------------
+diff --git a/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala b/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+index 54e97ce..dd8cb36 100644
+--- a/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
++++ b/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+@@ -168,6 +168,7 @@ object DNSSuspiciousConnectsAnalysis {
+   }
+ 
+   /**
++    * Get all DNS records which score below the given threshold.
+     *
+     * @param scoredDNSRecords scored DNS records.
+     * @param threshold        score tolerance.
+
+
+From commits-return-851-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 21:11:42 2018
+Return-Path: <commits-return-851-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id F1DCD1E183
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 21:11:42 +0000 (UTC)
+Received: (qmail 61772 invoked by uid 500); 20 Sep 2018 21:11:42 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 61735 invoked by uid 500); 20 Sep 2018 21:11:42 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 61726 invoked by uid 99); 20 Sep 2018 21:11:42 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd4-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 21:11:42 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd4-us-west.apache.org (ASF Mail Server at spamd4-us-west.apache.org) with ESMTP id 7C055C05CC
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 21:11:42 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd4-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.701
+X-Spam-Level:
+X-Spam-Status: No, score=-11.701 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5] autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd4-us-west.apache.org [10.40.0.11]) (amavisd-new, port 10024)
+	with ESMTP id RZE1b2yHo9OJ for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 21:11:41 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id F106A5F533
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 21:11:40 +0000 (UTC)
+Received: (qmail 61633 invoked by uid 99); 20 Sep 2018 21:11:40 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 21:11:40 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id E6F4BE11C5; Thu, 20 Sep 2018 21:11:39 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 21:11:39 -0000
+Message-Id: <30832407512945609a6f9fd214f67fc9@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [1/4] incubator-spot git commit: added missing period
+
+Repository: incubator-spot
+Updated Branches:
+  refs/heads/master 546139f5a -> 670018538
+
+
+added missing period
+
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/b98b88b3
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/b98b88b3
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/b98b88b3
+
+Branch: refs/heads/master
+Commit: b98b88b3d4f2413a147fc010a404827408a6bf92
+Parents: 14dbd51
+Author: tpltnt <tpltnt.github@dropcut.net>
+Authored: Fri Apr 6 14:18:46 2018 +0200
+Committer: tpltnt <tpltnt.github@dropcut.net>
+Committed: Fri Apr 6 14:18:46 2018 +0200
+
+----------------------------------------------------------------------
+ .../scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala  | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/b98b88b3/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+----------------------------------------------------------------------
+diff --git a/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala b/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+index acf8fc6..17cb52d 100644
+--- a/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
++++ b/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+@@ -31,7 +31,7 @@ import org.apache.spot.utilities.data.validation.{InputSchema, InvalidDataHandle
+ 
+ /**
+   * The suspicious connections analysis of DNS log data develops a probabilistic model the DNS queries
+-  * made by each client IP and flags those assigned a low probability as "suspicious"
++  * made by each client IP and flags those assigned a low probability as "suspicious".
+   */
+ 
+ object DNSSuspiciousConnectsAnalysis {
+
+
+From commits-return-852-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 21:11:43 2018
+Return-Path: <commits-return-852-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id 7A3EC1E185
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 21:11:43 +0000 (UTC)
+Received: (qmail 62343 invoked by uid 500); 20 Sep 2018 21:11:43 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 62180 invoked by uid 500); 20 Sep 2018 21:11:43 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 61911 invoked by uid 99); 20 Sep 2018 21:11:43 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd1-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 21:11:43 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd1-us-west.apache.org (ASF Mail Server at spamd1-us-west.apache.org) with ESMTP id C4196C09D6
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 21:11:42 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd1-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.701
+X-Spam-Level:
+X-Spam-Status: No, score=-11.701 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001,
+	USER_IN_DEF_SPF_WL=-7.5] autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd1-us-west.apache.org [10.40.0.7]) (amavisd-new, port 10024)
+	with ESMTP id 0ZkTTEa5ApjT for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 21:11:42 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id 4091B5F169
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 21:11:41 +0000 (UTC)
+Received: (qmail 61640 invoked by uid 99); 20 Sep 2018 21:11:40 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 21:11:40 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id E9AB4E11C8; Thu, 20 Sep 2018 21:11:39 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 21:11:40 -0000
+Message-Id: <41640a68f5c143eb8a005372f8115207@git.apache.org>
+In-Reply-To: <30832407512945609a6f9fd214f67fc9@git.apache.org>
+References: <30832407512945609a6f9fd214f67fc9@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [2/4] incubator-spot git commit: description for DNS record filter
+ methods
+
+description for DNS record filter methods
+
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/a142dadf
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/a142dadf
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/a142dadf
+
+Branch: refs/heads/master
+Commit: a142dadfd5dbb3f50aba413886c35f7309c3e944
+Parents: b98b88b
+Author: tpltnt <tpltnt.github@dropcut.net>
+Authored: Fri Apr 6 14:23:11 2018 +0200
+Committer: tpltnt <tpltnt.github@dropcut.net>
+Committed: Fri Apr 6 14:23:37 2018 +0200
+
+----------------------------------------------------------------------
+ .../org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala    | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+----------------------------------------------------------------------
+
+
+http://git-wip-us.apache.org/repos/asf/incubator-spot/blob/a142dadf/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+----------------------------------------------------------------------
+diff --git a/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala b/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+index 17cb52d..54e97ce 100644
+--- a/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
++++ b/spot-ml/src/main/scala/org/apache/spot/dns/DNSSuspiciousConnectsAnalysis.scala
+@@ -106,9 +106,11 @@ object DNSSuspiciousConnectsAnalysis {
+ 
+ 
+   /**
+-    *
++    * Return all DNS records with valid values.
++    * 
+     * @param inputDNSRecords raw DNS records.
+     * @return
++    * @see filterInvalidRecords(DataFrame)
+     */
+   def filterRecords(inputDNSRecords: DataFrame): DataFrame = {
+ 
+@@ -135,9 +137,11 @@ object DNSSuspiciousConnectsAnalysis {
+   }
+ 
+   /**
++    * Return all DNS records with invalid values.
+     *
+     * @param inputDNSRecords raw DNS records.
+     * @return
++    * @see filterRecords(DataFrame)
+     */
+   def filterInvalidRecords(inputDNSRecords: DataFrame): DataFrame = {
+ 
+
+
+From commits-return-853-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org  Thu Sep 20 21:11:43 2018
+Return-Path: <commits-return-853-apmail-spot-commits-archive=spot.apache.org@spot.incubator.apache.org>
+X-Original-To: apmail-spot-commits-archive@minotaur.apache.org
+Delivered-To: apmail-spot-commits-archive@minotaur.apache.org
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by minotaur.apache.org (Postfix) with SMTP id D1AA81E187
+	for <apmail-spot-commits-archive@minotaur.apache.org>; Thu, 20 Sep 2018 21:11:43 +0000 (UTC)
+Received: (qmail 62616 invoked by uid 500); 20 Sep 2018 21:11:43 -0000
+Delivered-To: apmail-spot-commits-archive@spot.apache.org
+Received: (qmail 62591 invoked by uid 500); 20 Sep 2018 21:11:43 -0000
+Mailing-List: contact commits-help@spot.incubator.apache.org; run by ezmlm
+Precedence: bulk
+List-Help: <mailto:commits-help@spot.incubator.apache.org>
+List-Unsubscribe: <mailto:commits-unsubscribe@spot.incubator.apache.org>
+List-Post: <mailto:commits@spot.incubator.apache.org>
+List-Id: <commits.spot.incubator.apache.org>
+Reply-To: dev@spot.incubator.apache.org
+Delivered-To: mailing list commits@spot.incubator.apache.org
+Received: (qmail 62582 invoked by uid 99); 20 Sep 2018 21:11:43 -0000
+Received: from pnap-us-west-generic-nat.apache.org (HELO spamd2-us-west.apache.org) (209.188.14.142)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 21:11:43 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by spamd2-us-west.apache.org (ASF Mail Server at spamd2-us-west.apache.org) with ESMTP id 4C90E1A0466
+	for <commits@spot.apache.org>; Thu, 20 Sep 2018 21:11:43 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at spamd2-us-west.apache.org
+X-Spam-Flag: NO
+X-Spam-Score: -11.201
+X-Spam-Level:
+X-Spam-Status: No, score=-11.201 tagged_above=-999 required=6.31
+	tests=[KAM_ASCII_DIVIDERS=0.8, KAM_NUMSUBJECT=0.5,
+	RCVD_IN_DNSWL_HI=-5, SPF_PASS=-0.001, USER_IN_DEF_SPF_WL=-7.5]
+	autolearn=disabled
+Received: from mx1-lw-eu.apache.org ([10.40.0.8])
+	by localhost (spamd2-us-west.apache.org [10.40.0.9]) (amavisd-new, port 10024)
+	with ESMTP id B9X0vOwwQBsb for <commits@spot.apache.org>;
+	Thu, 20 Sep 2018 21:11:42 +0000 (UTC)
+Received: from mail.apache.org (hermes.apache.org [140.211.11.3])
+	by mx1-lw-eu.apache.org (ASF Mail Server at mx1-lw-eu.apache.org) with SMTP id 826605F568
+	for <commits@spot.incubator.apache.org>; Thu, 20 Sep 2018 21:11:41 +0000 (UTC)
+Received: (qmail 61643 invoked by uid 99); 20 Sep 2018 21:11:40 -0000
+Received: from git1-us-west.apache.org (HELO git1-us-west.apache.org) (140.211.11.23)
+    by apache.org (qpsmtpd/0.29) with ESMTP; Thu, 20 Sep 2018 21:11:40 +0000
+Received: by git1-us-west.apache.org (ASF Mail Server at git1-us-west.apache.org, from userid 33)
+	id EEB6DE11CB; Thu, 20 Sep 2018 21:11:39 +0000 (UTC)
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+From: taddwood@apache.org
+To: commits@spot.incubator.apache.org
+Date: Thu, 20 Sep 2018 21:11:42 -0000
+Message-Id: <28cb5c8e561b4537913c75c23d7964de@git.apache.org>
+In-Reply-To: <30832407512945609a6f9fd214f67fc9@git.apache.org>
+References: <30832407512945609a6f9fd214f67fc9@git.apache.org>
+X-Mailer: ASF-Git Admin Mailer
+Subject: [4/4] incubator-spot git commit: Merge branch 'master' into pr-142
+
+Merge branch 'master' into pr-142
+
+
+Project: http://git-wip-us.apache.org/repos/asf/incubator-spot/repo
+Commit: http://git-wip-us.apache.org/repos/asf/incubator-spot/commit/67001853
+Tree: http://git-wip-us.apache.org/repos/asf/incubator-spot/tree/67001853
+Diff: http://git-wip-us.apache.org/repos/asf/incubator-spot/diff/67001853
+
+Branch: refs/heads/master
+Commit: 670018538fba3ee09d05cc969714ccb616d8c8e0
+Parents: 76034f4 546139f
+Author: Tadd Wood <tadd@arcadiadata.com>
+Authored: Thu Sep 20 14:11:09 2018 -0700
+Committer: Tadd Wood <tadd@arcadiadata.com>
+Committed: Thu Sep 20 14:11:09 2018 -0700
+
+----------------------------------------------------------------------
+ README.md                                  | 19 +++++++++++++------
+ issues-subscribe@spot.incubator.apache.org |  0
+ spot-ingest/start_ingest_standalone.sh     |  2 +-
+ spot-ml/build.sbt                          |  9 +++------
+ spot-ml/project/plugins.sbt                |  2 +-
+ 5 files changed, 18 insertions(+), 14 deletions(-)
+----------------------------------------------------------------------
+
+
+
